@@ -1,1 +1,99 @@
-/* Add your own styles */
+/* ===============================
+   GLOBAL PAGE STYLE
+   =============================== */
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+header {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* ===============================
+   MAIN CONTENT AREA
+   =============================== */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* ===============================
+   CONTROLS SECTION (INPUT & BUTTON)
+   =============================== */
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* INPUT FIELD */
+#country {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#country:focus {
+    border-color: #457b9d;
+    box-shadow: 0 0 5px rgba(69, 123, 157, 0.5);
+}
+
+/* LOOKUP BUTTON */
+#lookup {
+    padding: 10px 15px;
+    background: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#lookup:hover {
+    background: #1d3557;
+}
+
+/* ===============================
+   RESULTS TABLE
+   =============================== */
+#result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#result th, #result td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#result th {
+    background: #457b9d;
+    color: white;
+    font-weight: bold;
+}
+
+#result tr:nth-child(even) {
+    background: #f1f1f1;
+}
